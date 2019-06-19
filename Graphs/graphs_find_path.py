@@ -20,6 +20,7 @@ g = { "a" : ["d", "f"],
 
 ## recursion                                                                                                                                                                     
 def find_path(graph, start_vertex, end_vertex, path=[]):
+    ### L'idea e' di spostare sempre lo start_point fino a quando start_point == end_point                                                                                       
     path = path + [start_vertex]
     if start_vertex == end_vertex: #pop-out condition                                                                                                                            
         return path
